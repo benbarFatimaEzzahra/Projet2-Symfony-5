@@ -1,0 +1,8 @@
+{% extends '../lajoutgeneral.html.twig' %}
+
+
+{% block contenu %}
+     {% for condidat in condidats %}
+        {{ condidat }} => {{ condidat.liste }}
+    {% endfor %}
+{% endblock %}

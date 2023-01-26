@@ -1,0 +1,15 @@
+{% extends 'lajoutgeneral.html.twig' %}
+    {% block contenu %}
+        {% for condidat in condidats %}
+            <a style="background-color: bisque; color: blueviolet" href="{{ path('app_actionCondidat',  {'id': condidat.id }) }}">{{ condidat }}</a>
+            <br>
+            <br>
+
+
+    {% endfor %}
+    <lo>
+        <li><a href="{{ path('app_ajouter') }}"> ajouter un candidat </a> </li>
+        <br>
+        <li><a href="{{ path('app_action') }}">Page Accueil</a></li>
+    </lo>
+        {% endblock %}
